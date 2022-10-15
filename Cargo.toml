@@ -1,6 +1,6 @@
 [package]
 name = "juniper_relay_connection"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Tilman Roeder"]
 edition = "2018"
 repository = "https://github.com/dyedgreen/juniper-relay"
