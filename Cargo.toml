@@ -3,6 +3,12 @@ name = "juniper-relay"
 version = "0.1.0"
 authors = ["Tilman Roeder"]
 edition = "2018"
+repository = "https://github.com/dyedgreen/juniper-relay"
+license = "MIT"
+description = "Relay style pagination for Juniper."
+keywords = ["juniper", "relay", "graphql"]
+categories = ["web-programming"]
+exclude = [".github"]
 
 [dependencies]
 juniper = "0.15"
