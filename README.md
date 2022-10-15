@@ -1,7 +1,7 @@
 # Juniper Relay Connections
 
-[![crates.io](https://img.shields.io/crates/v/placeholder.svg)](https://crates.io/crates/placeholder)
-[![Released API docs](https://docs.rs/placeholder/badge.svg)](https://docs.rs/placeholder)
+[![crates.io](https://img.shields.io/crates/v/juniper_relay_connection.svg)](https://crates.io/crates/juniper_relay_connection)
+[![Released API docs](https://docs.rs/juniper_relay_connection/badge.svg)](https://docs.rs/juniper_relay_connection)
 [![CI](https://github.com/dyedgreen/juniper-relay/actions/workflows/ci.yml/badge.svg)](https://github.com/dyedgreen/juniper-relay/actions/workflows/ci.yml)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
