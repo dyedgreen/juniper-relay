@@ -1,5 +1,5 @@
 [package]
-name = "juniper-relay"
+name = "juniper_relay_connection"
 version = "0.1.0"
 authors = ["Tilman Roeder"]
 edition = "2018"

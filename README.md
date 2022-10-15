@@ -13,8 +13,6 @@ schema and implements the [relay connection interface][spec].
 ## Example
 
 ```rust
-use juniper_relay::{RelayConnection, RelayConnectionNode};
-
 #[derive(GraphQLObject)]
 struct Foo {
   id: i32,
@@ -22,31 +20,21 @@ struct Foo {
 
 impl RelayConnectionNode for Foo {
     type Cursor = i32;
-
     fn cursor(&self) -> Self::Cursor {
         self.id
     }
-
     fn connection_type_name() -> &'static str {
         "FooConnection"
     }
-
     fn edge_type_name() -> &'static str {
         "FooConnectionEdge"
     }
 }
 
-let first: Option<i32> = Some(42);
-let after: Option<String> = Some("42");
-let last: Option<i32> = None;
-let before: Option<String> = None;
-
-fn run_query(sql: String) -> Vec<Foo> { vec![] };
-
 RelayConnection::new(first, after, last, before, |after, before, limit| {
-    // You'd typically want use a query builder like diesel for this ...
     let sql = format!("SELECT (id) FROM foo WHERE id > {after} AND id < {before} LIMIT {limit}");
-    Ok(run_query(sql))
+    let edges: Vec<Foo> = run_query(sql);
+    Ok(edges)
 })
 ```
 

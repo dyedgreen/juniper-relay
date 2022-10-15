@@ -10,7 +10,7 @@
 //!
 //! ```
 //! # use juniper::GraphQLObject;
-//! # use juniper_relay::{RelayConnection, RelayConnectionNode};
+//! # use juniper_relay_connection::{RelayConnection, RelayConnectionNode};
 //! #
 //! #[derive(GraphQLObject)]
 //! struct Foo {
